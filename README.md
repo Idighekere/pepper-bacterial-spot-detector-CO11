@@ -78,8 +78,8 @@ Then open `http://127.0.0.1:5000` in your browser.
 
 ## Contributors
 
-| Name | GitHub |
-|------|--------|
-| Idighekere Udo | [@idighekere](https://github.com/idighekere) |
+| Name | Reg. No. | GitHub |
+|------|----------|--------|
+| Idighekere Udo | | [@idighekere](https://github.com/idighekere) |
 
 *Add other group members above.*
