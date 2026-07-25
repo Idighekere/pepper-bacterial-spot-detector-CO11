@@ -4,8 +4,8 @@ A binary image classifier that distinguishes between **healthy pepper leaves** a
 
 ## Task
 
-| Group | Classification Task                |
-|-------|-------------------------------------|
+| Group | Classification Task                     |
+| ----- | --------------------------------------- |
 | CO11  | Pepper Healthy vs Pepper Bacterial Spot |
 
 ## Dataset
@@ -13,6 +13,7 @@ A binary image classifier that distinguishes between **healthy pepper leaves** a
 Source: [PlantVillage Dataset](https://www.kaggle.com/datasets/tushar5harma/plantvillage-dataset) on Kaggle.
 
 The dataset contains leaf images of multiple crop species. Only the **Pepper** classes are used:
+
 - `Pepper__bell___Bacterial_spot` — diseased
 - `Pepper__bell___healthy` — healthy
 
@@ -54,7 +55,7 @@ Then open `http://127.0.0.1:5000` in your browser.
 
 - **Model**: TensorFlow / Keras (Custom CNN + MobileNetV3 Transfer Learning)
 - **Backend**: Flask
-- **Deployment**: Render (Gunicorn)
+- **Deployment**: Render (Gunicorn) / Hugging Face
 - **Version Control**: Git & GitHub
 
 ## Project Structure
@@ -74,12 +75,12 @@ Then open `http://127.0.0.1:5000` in your browser.
 
 ## Challenges & Improvements
 
-*To be completed after development.*
+_To be completed after development._
 
 ## Contributors
 
-| Name | Reg. No. | GitHub |
-|------|----------|--------|
-| Idighekere Udo | | [@idighekere](https://github.com/idighekere) |
+| Name           | Reg. No.      | GitHub                                       |
+| -------------- | ------------- | -------------------------------------------- |
+| Idighekere Udo | 22/EG/CO/1715 | [@idighekere](https://github.com/idighekere) |
 
-*Add other group members above.*
+_Add other group members above._
