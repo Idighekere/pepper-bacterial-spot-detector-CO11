@@ -79,8 +79,15 @@ _To be completed after development._
 
 ## Contributors
 
-| Name           | Reg. No.      | GitHub                                       |
-| -------------- | ------------- | -------------------------------------------- |
-| Idighekere Udo | 22/EG/CO/1715 | [@idighekere](https://github.com/idighekere) |
+| Name           | Reg. No.      | GitHub                                             |
+| -------------- | ------------- | -------------------------------------------------- |
+| Idighekere Udo | 22/EG/CO/1715 | [@idighekere](https://github.com/idighekere)       |
+| Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
+| Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
+| Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
+| Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
+| Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
+| Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
+| Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
 
 _Add other group members above._
