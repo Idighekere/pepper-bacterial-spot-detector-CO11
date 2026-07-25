@@ -126,7 +126,7 @@ _To be completed after development._
 | -------------- | ------------- | -------------------------------------------------- |
 | Idighekere Udo | 22/EG/CO/1715 | [@idighekere](https://github.com/idighekere)       |
 | Ekemini-Abasi Tom      | 22/EG/CO/1655 | [@tomrex22](https://github.com/tomrex22)   |
-| Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
+| Bassey, Kuyik      | 22/EG/CO/1775 | [@iamkuyik](https://github.com/iamkuyik) |
 | Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
 | Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
 | Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
