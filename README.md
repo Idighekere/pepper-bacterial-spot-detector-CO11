@@ -129,7 +129,7 @@ _To be completed after development._
 | Bassey, Kuyik      | 22/EG/CO/1775 | [@iamkuyik](https://github.com/iamkuyik) |
 | Bankole John .O   | 22/EG/CO/1725 | [@Johnbo616](https://github.com/Johnbo616) |
 | Udofia, Aniebietabasi A.      | 22/EG/CO/1765 | [@aniebietabasi01](https://github.com/aniebietabasi01) |
-| Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
+| Okposin, Edidiong      | 22/EG/CO/1635 | [@22EGCO1635](https://github.com/22EGCO1635) |
 | Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
 | Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
 
