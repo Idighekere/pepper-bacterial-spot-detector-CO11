@@ -82,7 +82,7 @@ _To be completed after development._
 | Name           | Reg. No.      | GitHub                                             |
 | -------------- | ------------- | -------------------------------------------------- |
 | Idighekere Udo | 22/EG/CO/1715 | [@idighekere](https://github.com/idighekere)       |
-| Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
+| Ekemini-Abasi Tom      | 22/EG/CO/1655 | [@tomrex22](https://github.com/tomrex22)   |
 | Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
 | Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
 | Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
