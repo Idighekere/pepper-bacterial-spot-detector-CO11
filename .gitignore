@@ -1,0 +1,21 @@
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.vscode/
+.streamlit/
+*.sqlite
+*.log
+*.tmp
+*.bak
+.env
+*.egg
+*.egg-info/
+dist/
+build/
+*.swp
+
+# dataset files
+datasets/
+*.csv
+*.keras
