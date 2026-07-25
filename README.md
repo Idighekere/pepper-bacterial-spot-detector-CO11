@@ -132,5 +132,9 @@ _To be completed after development._
 | Okposin, Edidiong      | 22/EG/CO/1635 | [@22EGCO1635](https://github.com/22EGCO1635) |
 | Eno, Abasiono  | 22/EG/CO/1745 | [@Gemspixelz](https://github.com/Gemspixelz) |
 | Bassey, Abasiama I.  | 22/EG/CO/1755 | [@abasiamainemesit](https://github.com/abasiamainemesit) |
-Okure, Praise Okure    | 22/EG/CO/1735 | [@Praiz05](https://github.com/Praiz05) 
+Okure, Praise Okure    | 22/EG/CO/1735 | [@Praiz05](https://github.com/Praiz05) |
+ | Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
+ | Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
+ | Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
+ 
  _ Add other group members above _
