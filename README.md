@@ -10,12 +10,38 @@ A binary image classifier that distinguishes between **healthy pepper leaves** a
 
 ## Dataset
 
-Source: [PlantVillage Dataset](https://www.kaggle.com/datasets/tushar5harma/plantvillage-dataset) on Kaggle.
+Download from Kaggle: [Pepper Belly Crop (PlantVillage DS)](https://www.kaggle.com/datasets/zienabesam/pepper-belly-crop-plantvillage-ds)
 
-The dataset contains leaf images of multiple crop species. Only the **Pepper** classes are used:
+Only the **Pepper** classes are used:
 
-- `Pepper__bell___Bacterial_spot` — diseased
-- `Pepper__bell___healthy` — healthy
+- `Pepper,_bell___Bacterial_spot` — diseased
+- `Pepper,_bell___healthy` — healthy
+
+**Note:** The dataset is not pushed to the repository (see `.gitignore`).  
+To set it up locally, run the provided split script after downloading:
+
+```bash
+# 1. Download the dataset from Kaggle and unzip it
+#    into datasets/Pepper Belly Crop DS/
+
+# 2. Run the split script (creates train/val/test splits with clean folder names)
+python split_dataset.py
+```
+
+This produces:
+
+```
+datasets/
+├── train/
+│   ├── Bacterial_Spot/
+│   └── Healthy/
+├── val/
+│   ├── Bacterial_Spot/
+│   └── Healthy/
+└── test/
+    ├── Bacterial_Spot/
+    └── Healthy/
+```
 
 ## How It Works
 
@@ -25,6 +51,14 @@ The dataset contains leaf images of multiple crop species. Only the **Pepper** c
 4. The result is displayed on the page.
 
 ## How to Run Locally
+
+### Prerequisites
+
+- Python 3.x
+- Git
+- Kaggle account (to download the dataset)
+
+### Steps
 
 ```bash
 # 1. Clone the repository
@@ -36,10 +70,18 @@ python -m venv venv
 source venv/bin/activate        # Linux/macOS
 # venv\Scripts\activate         # Windows
 
-# 3. Install dependencies
+# 3. Set up the dataset
+#    - Download from Kaggle and unzip into datasets/Pepper Belly Crop DS/
+#    - Then run:
+python split_dataset.py
+
+# 4. Train the model (optional — a pre-trained model is included)
+#    Open and run training/train_model.ipynb in Jupyter
+
+# 5. Install dependencies
 pip install -r requirements.txt
 
-# 4. Run the app
+# 6. Run the app
 flask run
 # or
 python app.py
@@ -69,6 +111,7 @@ Then open `http://127.0.0.1:5000` in your browser.
 ├── training/
 │   └── train_model.ipynb   # Model training notebook
 ├── requirements.txt        # Python dependencies
+├── split_dataset.py        # Script to split raw download into train/val/test
 ├── .gitignore
 └── README.md
 ```
