@@ -131,6 +131,6 @@ _To be completed after development._
 | Udofia, Aniebietabasi A.      | 22/EG/CO/1765 | [@aniebietabasi01](https://github.com/aniebietabasi01) |
 | Okposin, Edidiong      | 22/EG/CO/1635 | [@22EGCO1635](https://github.com/22EGCO1635) |
 | Eno, Abasiono  | 22/EG/CO/1745 | [@Gemspixelz](https://github.com/Gemspixelz) |
-| Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
+| Bassey, Abasiama I.  | 22/EG/CO/1755 | [@abasiamainemesit](https://github.com/abasiamainemesit) |
 
 _Add other group members above._
