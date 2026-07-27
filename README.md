@@ -108,7 +108,7 @@ Then open `http://127.0.0.1:5000` in your browser.
 │   └── pepper_model.keras  # Trained model
 ├── templates/
 │   └── index.html          # Web interface
-├── training/
+├── notebooks/
 │   └── train_model.ipynb   # Model training notebook
 ├── requirements.txt        # Python dependencies
 ├── split_dataset.py        # Script to split raw download into train/val/test
