@@ -134,7 +134,7 @@ _To be completed after development._
 | Bassey, Abasiama I.  | 22/EG/CO/1755 | [@abasiamainemesit](https://github.com/abasiamainemesit) |
 Okure, Praise Okure    | 22/EG/CO/1735 | [@Praiz05](https://github.com/Praiz05) |
  |Okereke, Arizonachi Lynn    | 22/EG/CO/1785 | [@Zonarh](https://github.com/Zonarh) |
- | Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
+ | Edet, Abasiama Sunday    | 22/EG/CO/1675 | [@Edetcode](https://github.com/Edetcode) |
  | Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
  
  _ Add other group members above _
