@@ -135,6 +135,7 @@ _To be completed after development._
 Okure, Praise Okure    | 22/EG/CO/1735 | [@Praiz05](https://github.com/Praiz05) |
  |Okereke, Arizonachi Lynn    | 22/EG/CO/1785 | [@Zonarh](https://github.com/Zonarh) |
  | Edet, Abasiama Sunday    | 22/EG/CO/1675 | [@Edetcode](https://github.com/Edetcode) |
- | Your Name      | 22/EG/CO/XXXX | [@your-username](https://github.com/your-username) |
+ | Akpabio Martin Anthony | 22/EG/CO/1815 | [@rextyler9](https://github.com/rextyler9) |
+ 
  
  _ Add other group members above _
