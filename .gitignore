@@ -4,7 +4,7 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .vscode/
-.streamlit/
+.streamlit/secrets.toml
 *.sqlite
 *.log
 *.tmp
