@@ -143,3 +143,4 @@ Deployed on Streamlit Community Cloud:
  | Okereke, Arizonachi Lynn    | 22/EG/CO/1785 | [@Zonarh](https://github.com/Zonarh) |
  | Edet, Abasiama Sunday    | 22/EG/CO/1675 | [@Edetcode](https://github.com/Edetcode) |
  | Akpabio Martin Anthony | 22/EG/CO/1815 | [@rextyler9](https://github.com/rextyler9) |
+  | Your name | 22/EG/CO/XXXX | [@username](https://github.com/username) |
