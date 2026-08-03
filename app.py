@@ -573,6 +573,14 @@ INFO = """
   <div><div class="lbl">Input Size</div><div class="val">128 x 128</div></div>
   <div><div class="lbl">Engine</div><div class="val">TensorFlow</div></div>
 </div>
+
+<span class="nb-section">Model Performance</span>
+<div class="nb-info">
+  <div><div class="lbl">Test Accuracy</div><div class="val">99.47%</div></div>
+  <div><div class="lbl">Validation Accuracy</div><div class="val">99.46%</div></div>
+  <div><div class="lbl">Test Images</div><div class="val">374</div></div>
+  <div><div class="lbl">Parameters</div><div class="val">322K</div></div>
+</div>
 """
 
 FOOTER = """
