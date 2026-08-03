@@ -19,7 +19,7 @@ st.set_page_config(
 )
 
 MODEL_PATH = "models/custom_cnn_best.keras"
-REFERENCE_PATH = "models/leaf_reference.npz"
+# REFERENCE_PATH = "models/leaf_reference.npz"
 CLASS_NAMES = ["Bacterial_Spot", "Healthy"]
 
 CSS = """
@@ -482,10 +482,10 @@ def load_model():
     return model
 
 
-@st.cache_resource(show_spinner=False)
-def load_reference():
-    z = np.load(REFERENCE_PATH)
-    return z["embeddings"], float(z["threshold"])
+# @st.cache_resource(show_spinner=False)
+# def load_reference():
+#     z = np.load(REFERENCE_PATH)
+#     return z["embeddings"], float(z["threshold"])
 
 
 def preprocess(image_bytes):
@@ -589,8 +589,8 @@ st.markdown(TICKER, unsafe_allow_html=True)
 st.markdown(HERO, unsafe_allow_html=True)
 
 model = load_model()
-extractor = tf.keras.Model(inputs=model.input, outputs=model.layers[-2].output)
-ref_embeddings, leaf_threshold = load_reference()
+# extractor = tf.keras.Model(inputs=model.input, outputs=model.layers[-2].output)
+# ref_embeddings, leaf_threshold = load_reference()
 
 c1, c2, c3 = st.columns([1, 2, 1])
 with c2:
@@ -610,17 +610,18 @@ with c2:
             st.warning("No image uploaded. Attach a leaf photo first.")
         else:
             arr = preprocess(st.session_state["img_bytes"])
-            feats = extractor.predict(arr, verbose=0)[0]
-            feats = feats / (np.linalg.norm(feats) + 1e-8)
-            distance = float(np.min(np.linalg.norm(ref_embeddings - feats, axis=1)))
-            if distance > leaf_threshold:
-                st.markdown(unknown_html(distance, leaf_threshold), unsafe_allow_html=True)
-            else:
-                probs = model.predict(arr, verbose=0)[0]
-                pred_idx = int(np.argmax(probs))
-                label = CLASS_NAMES[pred_idx]
-                confidence = float(probs[pred_idx])
-                st.markdown(result_html(label, confidence), unsafe_allow_html=True)
+            # OOD guard disabled: always run the model and show the result.
+            # feats = extractor.predict(arr, verbose=0)[0]
+            # feats = feats / (np.linalg.norm(feats) + 1e-8)
+            # distance = float(np.min(np.linalg.norm(ref_embeddings - feats, axis=1)))
+            # if distance > leaf_threshold:
+            #     st.markdown(unknown_html(distance, leaf_threshold), unsafe_allow_html=True)
+            # else:
+            probs = model.predict(arr, verbose=0)[0]
+            pred_idx = int(np.argmax(probs))
+            label = CLASS_NAMES[pred_idx]
+            confidence = float(probs[pred_idx])
+            st.markdown(result_html(label, confidence), unsafe_allow_html=True)
 
 st.markdown('<div style="padding: 0 24px;">' + INFO + "</div>", unsafe_allow_html=True)
 st.markdown(FOOTER, unsafe_allow_html=True)

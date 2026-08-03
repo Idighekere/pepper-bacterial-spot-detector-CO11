@@ -2,6 +2,8 @@
 
 A binary image classifier that distinguishes between **healthy pepper leaves** and **pepper leaves infected with Bacterial Spot**, built with TensorFlow and deployed as a Streamlit web application with a custom neobrutalist UI.
 
+🏆 Our team finished **second place** in the GET324 mini-project competition.
+
 ## Task
 
 | Group | Classification Task                     |
@@ -41,10 +43,9 @@ datasets/
 ## How It Works
 
 1. Upload a photo of a pepper leaf through the web interface.
-2. The image is resized to 128×128 and checked against a gallery of known leaf embeddings.
-3. If the photo does not resemble any training leaf, the app returns a "Not a Leaf" notice.
-4. Otherwise the model returns a Healthy / Bacterial Spot prediction with a confidence score.
-5. The result is displayed on the page.
+2. The image is resized to 128×128 and passed to the model.
+3. The model returns a Healthy / Bacterial Spot prediction with a confidence score.
+4. The result is displayed on the page.
 
 ## How to Run Locally
 
@@ -104,11 +105,11 @@ Deployed on Streamlit Community Cloud:
 ```
 ├── app.py                  # Streamlit application
 ├── flask_app.py            # Legacy Flask app (kept as backup)
-├── build_reference.py      # Builds the leaf-embedding gallery (Not-a-Leaf guard)
+├── build_reference.py      # OOD experiment (guard disabled in the current app)
 ├── models/
 │   ├── custom_cnn_best.keras  # Trained model
 │   ├── custom_cnn.keras
-│   └── leaf_reference.npz  # Embedding gallery + threshold for the guard
+│   └── leaf_reference.npz  # Embedding gallery (OOD experiment, unused by the app)
 ├── templates/
 │   └── index.html          # Legacy Flask template (backup)
 ├── notebooks/
@@ -123,7 +124,7 @@ Deployed on Streamlit Community Cloud:
 ## Challenges & Improvements
 
 1. **False sick reports** — every leaf was reported as Bacterial Spot at ~66% confidence. The model already rescales pixel values internally, but the app normalized them a second time. Fixed by removing the duplicate normalization.
-2. **Confident guesses on random photos** — the model always picks one of its two classes, so a non-leaf photo got a confident but meaningless result. Added a "Not a Leaf" guard that compares each photo's embedding to thousands of known leaf photos.
+2. **Confident guesses on random photos** — the model always picks one of its two classes, so a non-leaf photo got a confident but meaningless result. We explored an embedding-based "Not a Leaf" guard, but it also rejected real-world leaf photos — exactly the input the app must accept — so we removed it from the app and instead show the model's confidence score with the prediction.
 3. **Limited hardware resources** — no GPU and little memory made training slow and crash-prone. Training moved to Google Colab, and the model was kept small (322K parameters, 128×128 input) with TensorFlow thread limits to fit low-memory hosting.
 4. **Deployment** — the initial Render deployment struggled with memory and request timeouts. Moved to Streamlit Community Cloud, which auto-installs dependencies and serves the app.
 
